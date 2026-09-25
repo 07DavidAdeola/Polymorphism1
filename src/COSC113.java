@@ -71,28 +71,20 @@ public class COSC113 extends Course {
         this.students = students;
     }
 
-
+    // Package: java files under same folder are considered to be in a same package
     //Method Overriding: defining a method with the same method signature from the parent class
     @Override
     public void display_course_information (){
         // Lab Work - use super.ATTRIBUTE_NAME inside a print statement
-        super.display_course_information();
         System.out.println("Syllabus: " + this.syllabus + " Language: " + this.coding_language +" Instructor: " +
                 this.i1 + "Students: " + this.students);
-
 
             System.out.println("Course Number: " + super.course_number);
             System.out.println("Credit: " + super.credit);
             System.out.println("Name: " + super.name);
 
-            System.out.println("Syllabus: " + this.syllabus);
-            System.out.println("Language: " + this.coding_language);
-            System.out.println("Instructor: " + this.i1);
-            System.out.println("Students: " + this.students);
         }
-
-
     }
 
 
-    // Package: java files under same folder are considered to be in a same package
+
